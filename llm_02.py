@@ -1,3 +1,10 @@
+!pip install streamlit pyngrok
+!pip -q install langchain pypdf chromadb sentence-transformers faiss-gpu
+!pip install loguru
+!pip install -q -U bitsandbytes
+!pip install -q -U git+https://github.com/huggingface/transformers.git
+!pip install -q -U git+https://github.com/huggingface/peft.git
+!pip install -q -U git+https://github.com/huggingface/accelerate.git
 import streamlit as st
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 from langchain.llms import HuggingFacePipeline
